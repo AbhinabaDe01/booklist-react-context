@@ -5,9 +5,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: darkmagenta;
+  display: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+.App{
+  background: #4c2a4c;
+  margin: 0px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #eee;
+  box-shadow:
+  0px 1.6px 2.2px rgba(0, 0, 0, 0.047),
+  0.1px 4.3px 5.3px rgba(0, 0, 0, 0.063),
+  0.1px 9px 10px rgba(0, 0, 0, 0.074),
+  0.2px 17.2px 17.9px rgba(0, 0, 0, 0.085),
+  0.4px 34.1px 33.4px rgba(0, 0, 0, 0.1),
+  1px 84px 80px rgba(0, 0, 0, 0.14)
+  ;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar{
+  padding: 10px 20px;
+  text-align: center;
+  background: #6d3d6d;
+}
+.navbar h1{
+  margin: 10px 0;
+}
+
+.book-list {
+  margin: 20px;
+}
+
+.book-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.book-list li {
+  margin: 10px 0;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  background: #6d3d6d;
+}
+
+.book-list li:hover {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.author {
+  font-size: 0.9em;
+}
+
+.empty {
+  margin: 20px;
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 0;
+  color: wheat;
+  background: #6d3d6d;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.1em;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  border: 0;
+  padding: 6px 20px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #eee;
+  opacity: 0.7;
 }
